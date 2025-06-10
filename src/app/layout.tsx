@@ -1,0 +1,45 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import Header from "@/components/header";
+import { latto, poppins } from "@/utils/font";
+import TopHeader from "@/components/top-header";
+import Marque from "@/components/marque";
+import Footer from "@/components/footer";
+import Link from "next/link";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
+export const metadata: Metadata = {
+  title: "Beershiva Public  School Chaukhutia - Quality Education",
+  description:
+    " Beershiva Public School in Chaukhutia provides excellent education and holistic development. Join us for a bright future!",
+  keywords:
+    "Beershiva public school Chaukhutia, Elementary schools near me, Best school near me , Middle schools near me, Play school near me, Kindergarten, High schools near me, Primary schools near me, Gymnasium, Primary school, Secondary education, Best school in chaukhutia, Best school in ranikhet ",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={`${latto.className} bg-white overflow-x-hidden`}>
+        <TopHeader />
+        <Header />
+        <Marque />
+        {children}
+        <Footer />
+        <div className="p-5">
+          <p className={`${poppins.className} text-center font-medium`}>
+            @Copyright 2024 All Rights Reserved
+          </p>
+          <p className={`${poppins.className} text-center font-medium`}>
+            <Link href={"https://preettech.com/"}>Developed by Preet Tech</Link>
+          </p>
+        </div>
+      </body>
+    </html>
+  );
+}
