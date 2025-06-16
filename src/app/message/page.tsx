@@ -5,7 +5,7 @@ import Video from "@/components/video";
 import { server_query_function } from "@/lib/graphql";
 import React from "react";
 
-const page = async () => {
+const Page = async () => {
   const query = `
 query MyQuery {
   messages {
@@ -24,7 +24,7 @@ query MyQuery {
 }
 `;
 
-  const response = (await server_query_function(query)) as {
+  interface MessageResponse {
     messages: [
       {
         messages: {
@@ -40,13 +40,15 @@ query MyQuery {
         }[];
       }
     ];
-  };
+  }
+
+  const response = (await server_query_function(query)) as MessageResponse;
 
   return (
     <>
       <Banner
         title="Message"
-        description="BEERSHIVA - CHAUKHUTIA"
+        description="Beersheba - Haldwani"
         source="/assets/image/aboutImage.jpg"
       />
       <FounderMessage messages={response.messages[0].messages} />
@@ -56,4 +58,4 @@ query MyQuery {
   );
 };
 
-export default page;
+export default Page;
