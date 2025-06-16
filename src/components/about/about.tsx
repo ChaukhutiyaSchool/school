@@ -16,17 +16,17 @@ const About = () => {
         <Heading2 title="Beershiva School" />
 
         <p className="text-gray-600 mt-5">
-          Established in the heart of Chaukhutia, Beershiva School began
-          its journey 2010, under the visionary leadership of the
-          late Shri. and Smt. N.N.D. Bhatt. Starting with few students, their
-          dedication and inspiration have been pivotal in shaping the school's
-          growth and commitment to educational excellence. Today, Beershiva School stands as a premier co-educational English Medium
-          institution, renowned for its nurturing environment and comprehensive
-          curriculum.
+          Established in the heart of Chaukhutia, Beershiva School began its
+          journey 2010, under the visionary leadership of the late Shri. and
+          Smt. N.N.D. Bhatt. Starting with few students, their dedication and
+          inspiration have been pivotal in shaping the school's growth and
+          commitment to educational excellence. Today, Beershiva School stands
+          as a premier co-educational English Medium institution, renowned for
+          its nurturing environment and comprehensive curriculum.
         </p>
         <p className="text-gray-600 mt-5">
-          Over the decades, Beershiva School has expanded to accommodate
-          a diverse student body and a dedicated faculty committed to holistic
+          Over the decades, Beershiva School has expanded to accommodate a
+          diverse student body and a dedicated faculty committed to holistic
           development. With a rich legacy of over many years of academic
           excellence, our school features a library of over 3000 books and
           advanced facilities, including 10 computers. Affiliated with CBSE and
@@ -38,14 +38,14 @@ const About = () => {
         className="relative h-[70vh] md:h-full
       "
       >
-        <img
+        <Image
           src={"/assets/image/about c.png"}
           alt="About Image"
           width={400}
           height={400}
           className="rounded-lg absolute top-0 left-0 md:left-24 w-60 h-80 object-cover"
         />
-        <img
+        <Image
           src={"/assets/image/about c (2).png"}
           alt="About Image"
           width={400}

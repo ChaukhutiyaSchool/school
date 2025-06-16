@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="grid gap-5 lg:px-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 lg:py-16 border-b">
       <div className="flex justify-center items-center">
         <Link href={"/"}>
-          <img
+          <Image
             src="/assets/image/logo-1.jpg"
             alt="logo"
             width={400}
@@ -68,18 +68,16 @@ const Footer = () => {
         </p>
         <ul className="flex flex-col gap-2 font-medium">
           <li className="flex gap-5">
-            <img
+            <Image
               src={"/assets/image/locaation.svg"}
               alt="location"
               width={40}
               height={40}
             />
-            <p>
-            Chaukhutia Dist. Almora (Uttarakhand)
-            </p>
+            <p>Chaukhutia Dist. Almora (Uttarakhand)</p>
           </li>
           <li className="flex gap-5">
-            <img
+            <Image
               src={"/assets/image/dark-call.svg"}
               alt="location"
               width={40}
@@ -88,7 +86,7 @@ const Footer = () => {
             <p>+91 81262 17345</p>
           </li>
           <li className="flex gap-5">
-            <img
+            <Image
               src={"/assets/image/dark-email.svg"}
               alt="location"
               width={30}
@@ -98,20 +96,28 @@ const Footer = () => {
           </li>
           <li>
             <ul className="flex gap-2 items-center">
-              <Link href={"https:/ /www.instagram.com/_beershiva_chaukhutia?igsh=MWRvNmpwM2JyMnpjag=="}>
-              <li>
-                <Instagram />
-              </li>
+              <Link
+                href={
+                  "https:/ /www.instagram.com/_beershiva_chaukhutia?igsh=MWRvNmpwM2JyMnpjag=="
+                }
+              >
+                <li>
+                  <Instagram />
+                </li>
               </Link>
-              <Link href={"https:/ /www.facebook.com/profile.php?id=100087115075148&mibextid=ZbWKwL"}>
-              <li>
-                <Facebook />
-              </li>
+              <Link
+                href={
+                  "https:/ /www.facebook.com/profile.php?id=100087115075148&mibextid=ZbWKwL"
+                }
+              >
+                <li>
+                  <Facebook />
+                </li>
               </Link>
               <Link href={"https:/ /www.youtube.com/@BeershivaChaukhutia"}>
-              <li>
-                <Youtube />
-              </li>
+                <li>
+                  <Youtube />
+                </li>
               </Link>
             </ul>
           </li>
