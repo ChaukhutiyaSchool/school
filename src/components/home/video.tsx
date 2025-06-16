@@ -13,13 +13,15 @@ import {
 import Image from "next/image";
 import { Card, CardContent } from "../ui/card";
 
-const Video = ({
-  featured,
-}: {
-  featured: { id: string; newsHeading: string; newsImage: { url: string } }[];
-}) => {
+type FeaturedItem = {
+  id: string;
+  newsHeading: string;
+  newsImage: { url: string };
+};
+
+const Video = ({ featured }: { featured: FeaturedItem[] }) => {
   return (
-    <section className="container relative  bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2 pt-20 pb-96 lg:pb-48">
+    <section className="container relative bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2 pt-20 pb-96 lg:pb-48">
       <div>
         <Heading2 title="Leading School in City Since 2010" />
         <p className="text-gray-600 my-5">
@@ -34,24 +36,26 @@ const Video = ({
           <Button>Explore Our Highlights</Button>
         </Link>
       </div>
-      <div className="flex justify-center mt-10 md:mt-0 ">
-        <Carousel className="w-72 mx-auto">
+          <div>
+        <Carousel className="mt-8 max-w-xs">
           <CarouselContent>
-            {featured?.map((item, index) => (
-              <CarouselItem key={index}>
-                <Card className="border-none">
-                  <CardContent className="flex flex-col gap-4 p-4">
-                    <Image
-                      src={item?.newsImage?.url}
-                      alt="featured news"
-                      width={400}
-                      height={300}
-                      className="w-64 h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="text-center">
-                      <Link href={`/news-event/${item?.id}`}>
-                        <p className="text-lg font-semibold text-gray-800">
-                          {item?.newsHeading}
+            {featured.map((item) => (
+              <CarouselItem key={item.id}>
+                <Card>
+                  <CardContent className="p-4">
+                    <div className="flex justify-center items-center">
+                      <Image
+                        src={item.newsImage.url}
+                        alt={`Featured news: ${item.newsHeading}`}
+                        width={400}
+                        height={300}
+                        className="w-64 h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="text-center mt-4">
+                      <Link href={`/news-event/${item.id}`}>
+                        <p className="text-lg  font-semibold text-gray-800">
+                          {item.newsHeading}
                         </p>
                       </Link>
                     </div>

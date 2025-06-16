@@ -39,16 +39,15 @@ type Blog = {
   shortDesc: string;
 };
 
-type Event = {
+type SchoolEvent = {
   id: string;
   day: string;
   eventName: string;
 };
-
 type BlogType = {
-chaukhutiyaBlogs: Blog[];
-chaukutiyaHomes: {
-    event: Event[];
+  chaukhutiyaBlogs: Blog[];
+  chaukutiyaHomes: {
+    event: SchoolEvent[];
   }[];
 };
 

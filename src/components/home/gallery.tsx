@@ -3,6 +3,7 @@ import React from "react";
 import Heading3 from "../heading3";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 const Gallery = ({
   image,
@@ -26,6 +27,7 @@ const Gallery = ({
             width={300}
             height={300}
             className="w-full h-72 rounded-lg object-cover"
+            quality={100}
           />
         ))}
       </div>

@@ -15,62 +15,29 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 const page = async () => {
-
   const bannerVideoQuery = `
-  query MyQuery {
- homes {
-   homeVideoBanner {
-     url
-   }
- }
+   query MyQuery {
+  homes {
+    homeVideoBanner {
+      url
+    }
+  }
 }
+  `;
 
- `;
- const videoBanner = (await server_query_function(
-   bannerVideoQuery
- )) as homeBannerType;
-
- 
-type homeBannerType = {
-  homes: {
-    homeVideoBanner: {
-      url: string;
-    }[];
-  }[];
-};
-
-
- const featuredNewsQuery = `
+  const featuredNewsQuery = `
 query MyQuery {
- newsEvents(where: {featured: true}) {
-   id
-   newsHeading
-   newsImage {
-     url
-   }
- }
+  newsEvents(where: {featured: true}) {
+    id
+    newsHeading
+    newsImage {
+      url
+    }
+  }
 }
 `;
 
-type NewsEventType = {
-  newsEvents: Array<{
-    id: string;
-    newsHeading: string;
-    newsImage: {
-      url: string;
-    };
-  }>;
-};
-
-
-const featuredResponse = (await server_query_function(
-  featuredNewsQuery
-)) as NewsEventType;
-
-
-
-
-  const query = `
+  const blogsEventsQuery = `
   query MyQuery {
   chaukhutiyaBlogs {
     id
@@ -89,14 +56,10 @@ const featuredResponse = (await server_query_function(
     }
   }
 }
-
 `;
 
-  const res = (await server_query_function(query)) as BlogType;
-  console.log(res);
-
-  const query1 = `
-query MyQuery {
+  const galleryQuery = `
+  query MyQuery {
   chaukutiyaHomes {
     homeGallery {
       homeGalleryImage {
@@ -107,12 +70,65 @@ query MyQuery {
 }
   `;
 
-  const response = (await server_query_function(query1)) as HomeType;
+  type NewsEventType = {
+    newsEvents: Array<{
+      id: string;
+      newsHeading: string;
+      newsImage: {
+        url: string;
+      };
+    }>;
+  };
+
+  type BlogType = {
+    chaukhutiyaBlogs: Array<{
+      id: string;
+      mainImage: {
+        url: string;
+      };
+      title: string;
+      slug: string;
+      shortDesc: string;
+    }>;
+    chaukutiyaHomes: Array<{
+      event: Array<{
+        id: string;
+        day: string;
+        eventName: string;
+      }>;
+    }>;
+  };
+
+  type HomeType = {
+    chaukutiyaHomes: Array<{
+      homeGallery: {
+        homeGalleryImage: Array<{
+          url: string;
+        }>;
+      };
+    }>;
+  };
+
+  type homeBannerType = {
+    homes: Array<{
+      homeVideoBanner: Array<{
+        url: string;
+      }>;
+    }>;
+  };
+
+  // Fetch all data in parallel using Promise.all
+  const [videoBanner, featuredResponse, res, response] = await Promise.all([
+    server_query_function(bannerVideoQuery) as Promise<homeBannerType>,
+    server_query_function(featuredNewsQuery) as Promise<NewsEventType>,
+    server_query_function(blogsEventsQuery) as Promise<BlogType>,
+    server_query_function(galleryQuery) as Promise<HomeType>,
+  ]);
 
   return (
     <>
-      <HeroSection video={videoBanner.homes} />
-      <Video featured={featuredResponse.newsEvents} />
+      <HeroSection video={videoBanner?.homes} />
+      <Video featured={featuredResponse?.newsEvents} />
       <About />
       <MissionAndValues />
       <Academics />
@@ -120,13 +136,16 @@ query MyQuery {
       <ToppersResult />
       <Branches />
       <Gallery
-      //@ts-expect-error
         image={response?.chaukutiyaHomes[0]?.homeGallery?.homeGalleryImage}
       />
-      <Events blogs={res.chaukhutiyaBlogs} events={res.chaukutiyaHomes[0]?.event} />
+      <Events
+        blogs={res?.chaukhutiyaBlogs}
+        events={res?.chaukutiyaHomes[0]?.event}
+      />
       <AdmissionEnquiry />
     </>
   );
 };
 
 export default page;
+
