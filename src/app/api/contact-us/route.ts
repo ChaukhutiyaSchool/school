@@ -2,7 +2,7 @@ import { GoogleAuth } from "google-auth-library";
 import { google } from "googleapis";
 import { NextResponse } from "next/server";
 
-export async function POST(req: Request, res: Response) {
+export async function POST(req: Request ) {
   console.log("🟢🟢🟢🟢🟢🟢Requesting...");
   const auth = new GoogleAuth({
     scopes: "https://www.googleapis.com/auth/spreadsheets",
