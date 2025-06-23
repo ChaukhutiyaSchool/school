@@ -33,7 +33,7 @@ const DisclosureRow = ({ title, url, index }: DisclosureRowProps) => (
     <td className="text-lg lg:text-xl font-semibold py-2 px-5">{title}</td>
     <td className="border-l-2 border-[#3B2565] py-2 px-5">
       <div className="flex justify-center items-center">
-        <Link href={url}>
+        <Link href={url} target="_blank">
           <Button>View Details</Button>
         </Link>
       </div>
@@ -53,7 +53,7 @@ const page = async () => {
           <Banner
             source="/assets/image/aboutImage.jpg"
             title="Disclosure"
-            description="Beersheba - Chaukhutia"
+            description="Beersheba - Chaukhutiya"
           />
           <section className="container p-5 lg:p-10">
             <Heading3 title="Mandatory Disclosure" />
@@ -70,7 +70,7 @@ const page = async () => {
         <Banner
           source="/assets/image/aboutImage.jpg"
           title="Disclosure"
-          description="Beersheba - Chaukhutia"
+          description="Beersheba - Chaukhutiya"
         />
 
         <section className="container p-5 lg:p-10">
@@ -103,7 +103,7 @@ const page = async () => {
         <Banner
           source="/assets/image/aboutImage.jpg"
           title="Disclosure"
-          description="Beersheba - Chaukhutia"
+          description="Beersheba - Chaukhutiya"
         />
         <section className="container p-5 lg:p-10">
           <Heading3 title="Mandatory Disclosure" />
