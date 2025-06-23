@@ -33,7 +33,7 @@ const DisclosureRow = ({ title, url, index }: DisclosureRowProps) => (
     <td className="text-lg lg:text-xl font-semibold py-2 px-5">{title}</td>
     <td className="border-l-2 border-[#3B2565] py-2 px-5">
       <div className="flex justify-center items-center">
-        <Link href={url} target="_blank">
+        <Link href={url}>
           <Button>View Details</Button>
         </Link>
       </div>
