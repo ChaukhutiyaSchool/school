@@ -144,7 +144,7 @@ const Academics = () => {
                 <Heading2 title="Beershiva School" />
 
                 <p className="text-gray-600 mt-5">
-                  At BeershivaSchool's High School, we focus on academic
+                  At Beershiva School's High School, we focus on academic
                   excellence and preparing students for future success. We
                   challenge students to reach their full potential through a
                   rigorous curriculum and personalized guidance. Our

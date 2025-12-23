@@ -29,11 +29,11 @@ const About = () => {
         <Heading2 title="Beershiva School" />
 
         <p className="text-gray-600 mt-5">
-          Founded in 2010, in Almora by the late Shri. and Smt. N.N.D. Bhatt,
+          Founded in 2010 in Almora by the late Shri and Smt. N. N. D. Bhat,
           Beersheba School has evolved from 60 students to a leading educational
-          institution. Our co-educational English Medium school offers diverse
+          institution. Our co-educational English-medium school offers diverse
           courses including Humanities, Commerce, AI, Coding, Yoga, and Science.
-          We boast modern facilities like state-of-the-art labs, a comprehensive
+          we boast modern facilities such as state-of-the-art labs, a comprehensive
           library, and advanced computer labs. We are dedicated to holistic
           development, integrating sports, arts, and extracurricular activities
           to prepare students for future challenges.

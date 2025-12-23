@@ -17,19 +17,17 @@ const About = () => {
 
         <p className="text-gray-600 mt-5">
           Established in the heart of Chaukhutia, Beershiva School began its
-          journey 2010, under the visionary leadership of the late Shri. and
-          Smt. N.N.D. Bhatt. Starting with few students, their dedication and
+          January 2010, Under the visionary leadership of the late Shri and Smt N. N. D. Bhatt. starting with a few students, their dedication and
           inspiration have been pivotal in shaping the school's growth and
           commitment to educational excellence. Today, Beershiva School stands
-          as a premier co-educational English Medium institution, renowned for
+          as a premier co-educational English-medium institution, renowned for
           its nurturing environment and comprehensive curriculum.
         </p>
         <p className="text-gray-600 mt-5">
-          Over the decades, Beershiva School has expanded to accommodate a
+          Over the years, Beershiva School has expanded to accommodate a
           diverse student body and a dedicated faculty committed to holistic
-          development. With a rich legacy of over many years of academic
-          excellence, our school features a library of over 3000 books and
-          advanced facilities, including 10 computers. Affiliated with CBSE and
+          development. With a rich legacy of many years of academic excellence, our school features a library of over 3000 books and
+          advanced facilities, including a well-equipped computer lab with 10 computers. Affiliated with CBSE and
           adhering to state government norms, we uphold rigorous standards in
           education to prepare students for a successful future.
         </p>

@@ -19,7 +19,7 @@ const OurDesc = () => {
       <p className=" text-gray-600 mt-3 md:mt-5">
       Beershiva School, located in Chaukhutiya, was established on July 4, 1977, in
         the heart of the city with an initial enrollment of only 60 children.
-        This co-educational English Medium school was founded by the late Shri.
+        This co-educational English-medium school was founded by the late Shri.
         and Smt. N.N.D. Bhatt. The school&apos;s origin, existence, and
         development can be attributed to the unwavering efforts of the late Mr.
         N.N.D. Bhatt.

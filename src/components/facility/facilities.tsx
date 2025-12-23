@@ -36,7 +36,7 @@ const facilitiesData = [
   {
     title: "School Bus Facility",
     description:
-      "The bus routes and stops will be decided keeping in mind convenience to as many as possible.The change in bus route can be done on request of the parents, provided it does not cause any inconvenience to any body else.The student should arrive at the stop 5 minutes prior to the arrival time of the bus.Buses will not wait for the late comers.The safety of the student till he/she boards the bus is totally parents responsibility.",
+      "The bus routes and stops will be decided keeping in mind convenience to as many as possible. The change in bus route can be done on request of the parents, provided it does not cause any inconvenience to anybody else. The student should arrive at the stop 5 minutes prior to the arrival time of the bus. Buses will not wait for the latecomers.The safety of the student till he/she boards the bus is totally parent's responsibility.",
     images: [
       "/assets/image/bus 2 r.jpg",
       "/assets/image/BUS C.png",
@@ -46,7 +46,7 @@ const facilitiesData = [
   {
     title: "Music Room",
     description:
-      "Acoustic Considerations: Proper acoustic treatment to minimize sound reflections and create an environment that enhances the quality of music production.Instruments: A variety of musical instruments based on the needs of the music program, such as pianos, guitars, drums, string instruments, and wind instruments.Music Stands: Adjustable and sturdy music stands for holding sheet music during practice and performances.Piano/Keyboard: An acoustic piano or electronic keyboard for accompaniment and practice.",
+      "Acoustic Considerations: Proper acoustic treatment to minimize sound reflections and create an environment that enhances the quality of music production. Instruments: A variety of musical instruments based on the needs of the music program, such as pianos, guitars, drums, string instruments, and wind instruments. Music Stands: Adjustable and sturdy music stands for holding sheet music during practice and performances. Piano/Keyboard: An acoustic piano or electronic keyboard for accompaniment and practice.",
     images: [
       "/assets/image/MUSIC C.png",
       "/assets/image/music 1 c.jpg",
@@ -56,7 +56,7 @@ const facilitiesData = [
   {
     title: "Art Room",
     description:
-      "A quality music room in a school should prioritize acoustic design, soundproofing, and a diverse collection of well-maintained instruments. It should feature quality pianos/keyboards, amplification and recording equipment, and organized storage. Visual aids, and technology integration enhance the learning environment. ",
+      "At Beershiva School, our Art Rooms are dynamic centers where imagination knows no bounds. We provide a nurturing environment across all four branches for students to explore diverse mediums, develop technical skills, and discover their unique artistic voice. We believe that art is essential for developing critical thinking, observation skills, and emotional intelligence.",
     images: [
       "/assets/image/art 1 c.jpg",
       "/assets/image/art 2 c.jpg",
