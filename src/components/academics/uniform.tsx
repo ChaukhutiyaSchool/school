@@ -25,6 +25,9 @@ const Uniform = () => {
                 <th className="border-2 border-[#3B2565] py-3 px-5 bg-gray-300">
                   Winter Uniform
                 </th>
+                <th className="border-2 border-[#3B2565] py-3 px-5 bg-gray-300">
+                  PT Uniform
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -40,16 +43,13 @@ const Uniform = () => {
                   </div>
                 </td>
                 <td className="border-2 border-[#3B2565] py-3 px-5">
-                  Classes I to X - White Shirt (Short sleeves), Blue Black Pants
-                  and shorts for boys below 5'height (upto Class VIII), Plain
-                  Black Shoes and Blue Black Socks with School colour stripes,
-                  School tie and belt, Blue Dastar for Sikh Boys
+                  Classes I to X - White Shirt (Short sleeves), Blue Black Pants and shorts for boys below 5' height, Black Shoes and blue black socks with stripes, Sardar Boys Dastar (Black).
                 </td>
                 <td className="border-2 border-[#3B2565] py-3 px-5">
-                  Classes I to X - White Shirt (Short sleeves), Blue Black Pants
-                  and shorts for boys below 5'height (upto Class VIII), Plain
-                  Black Shoes and Blue Black Socks with School colour stripes,
-                  School tie and belt, Blue Dastar for Sikh Boys.
+                  Classes I to X - Worsted Grey Pants (Only for hill schools), White Shirt with School Tie, blue black pullover with school stripes, Blue Black Blazer with School Crest. Grey Woolen Socks and Black Shoes, Black dastar for Sardar Boys.
+                </td>
+                <td className="border-2 border-[#3B2565] py-3 px-5">
+               Shirt house colour, pant/skirt blue black cotton, white tennis shoes and white socks.
                 </td>
               </tr>
               <tr>
@@ -64,14 +64,15 @@ const Uniform = () => {
                   </div>
                 </td>
                 <td className="border-2 border-[#3B2565] py-3 px-5">
-                  (Class I to X) - Blue Black divided skirt and white shirt.
-                  School tie and belt, Plain Black Shoes and Blue Black
-                  Stockings. Blue ribbon/Blue hair band 1 inch wide.
+                  (Class I to X) - Blue Black Skirt and White blouse. Black Shoes and Blue Black socks with stripes, Black ribbon.
                 </td>
                 <td className="border-2 border-[#3B2565] py-3 px-5">
-                  (Class I to X) - Blue Black divided skirt and white shirt.
-                  School tie and belt, Plain Black Shoes and Blue Black
-                  Stockings. Blue ribbon/Blue hair band 1 inch wide.
+                  (Class I to X) - Worsted grey skirt (Only for hill schools) white blouse with school tie. Blue black pullover with school stripes, Blue Black Blazer with School Crest, Woolen Stocking and black Shoes, Black ribbon.
+                </td>
+                <td className="border-2 border-[#3B2565] py-3 px-5">
+                  <td className="border-2 border-[#3B2565] py-3 px-5">
+               Shirt house colour, pant/skirt blue black cotton, white tennis shoes and white socks.
+                </td>
                 </td>
               </tr>
             </tbody>
