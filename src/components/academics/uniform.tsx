@@ -70,9 +70,9 @@ const Uniform = () => {
                   (Class I to X) - Worsted grey skirt (Only for hill schools) white blouse with school tie. Blue black pullover with school stripes, Blue Black Blazer with School Crest, Woolen Stocking and black Shoes, Black ribbon.
                 </td>
                 <td className="border-2 border-[#3B2565] py-3 px-5">
-                  <td className="border-2 border-[#3B2565] py-3 px-5">
+                 
                Shirt house colour, pant/skirt blue black cotton, white tennis shoes and white socks.
-                </td>
+               
                 </td>
               </tr>
             </tbody>
