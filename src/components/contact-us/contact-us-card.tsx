@@ -25,7 +25,7 @@ const ContactUsCard = () => {
             <PhoneCall />
 
             <div>
-              <p>+91 81262 17345 </p>
+              <p>+91 81269 67199 </p>
              
             </div>
           </div>

@@ -1,3 +1,7 @@
+if (typeof global !== 'undefined' && global.localStorage && !global.localStorage.getItem) {
+  global.localStorage = undefined;
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {

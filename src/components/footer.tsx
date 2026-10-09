@@ -83,7 +83,7 @@ const Footer = () => {
               width={40}
               height={40}
             />
-            <p>+91 81262 17345</p>
+            <p>+91 81269 67199</p>
           </li>
           <li className="flex gap-5">
             <Image
