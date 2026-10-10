@@ -1,5 +1,7 @@
 allowBuilds:
-  - dprint
-  - sharp
+  '0': dprint
+  '1': sharp
+  dprint: true
+  sharp: true
 patchedDependencies:
   buffer-equal-constant-time@1.0.1: patches/buffer-equal-constant-time@1.0.1.patch
