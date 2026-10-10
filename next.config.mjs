@@ -1,9 +1,7 @@
-if (typeof global !== 'undefined' && global.localStorage && !global.localStorage.getItem) {
-  global.localStorage = undefined;
-}
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  serverExternalPackages: ["googleapis", "google-auth-library"],
   images: {
     remotePatterns: [
       {
